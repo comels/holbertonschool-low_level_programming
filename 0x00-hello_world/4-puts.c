@@ -1,6 +1,6 @@
 #include <stdio.h>
 /* 
-* main est belle 
+* main=fonction
 */
 int main(void)
 {

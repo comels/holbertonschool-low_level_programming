@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* commentaire */
+/* 
+* main est belle 
+*/
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
