@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-* com
-*/
+ * main  - c'est la fonction main
+ * Return: 0
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
