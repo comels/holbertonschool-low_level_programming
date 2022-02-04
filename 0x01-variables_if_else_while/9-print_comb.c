@@ -7,16 +7,16 @@
 int main(void)
 {
 	int a = 48;
-	int b = 44;
-	int c = 32;
 
-	while (a < 57)
+	while (a < 58)
 	{	putchar(a);
 		a++;
-		putchar(b);
-		putchar(c);
+		if (a != 57)
+		{
+		putchar(',');
+		putchar(' ');
+		}
 	}
-	putchar (57);
 	putchar('\n');
 	return (0);
 }
