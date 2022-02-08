@@ -1,14 +1,12 @@
 #include "main.h"
 /**
  * _abs - fonction
- * @int: parametre
+ * @n: parametre
  * Return: 0
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n >= 0)
 	{
 		return (n);
