@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_to_98
+ * print_to_98 - fonction
  * Return: rien
  * @n: parametre
  */
