@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * _isupper
+ * @c: para
  * Return: 0 ou 1
  */
 int _isupper(int c)
