@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _isupper
+ * _isupper - fonction
  * @c: para
  * Return: 0 ou 1
  */
