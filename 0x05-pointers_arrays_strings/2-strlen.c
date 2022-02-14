@@ -1,13 +1,14 @@
 #include "main.h"
 /**
  * _strlen - fonction
- * Return: 0
+ * Return: i
  * @s: para
  */
 int _strlen(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; ++i)
-		return (i);
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
