@@ -13,6 +13,9 @@ char *cap_string(char *s)
 		if (s[i] < 58 && s[i] > 47)
 			s[i] = s[i];
 
+		else if (s[i] == 9)
+			s[i] = 32;
+
 		else if (s[i] < 94 && s[i] > 64)
 			s[i] = s[i];
 
