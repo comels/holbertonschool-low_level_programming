@@ -1,30 +1,41 @@
 #include "main.h"
 /**
  * cap_string - fonction
- * @s: param
+ * @s: The string
+ *
  * Return: s
  */
 char *cap_string(char *s)
 {
-	int i = 0;
+	int i;
+	int j = 1;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != 0; i++)
 	{
-		if (s[i] < 58 && s[i] > 47)
-			s[i] = s[i];
 
-		else if (s[i] == 9)
-			s[i] = 32;
+		if (j == 1 && s[i] >= 97 && s[i] <= 122)
+		{
+			s[i] -= 32;
+		}
 
-		else if (s[i] < 94 && s[i] > 64)
-			s[i] = s[i];
-
-		else if (s[i] < 123 && s[i] > 96)
-			s[i] = s[i];
-
+		if (
+			s[i] == ' ' ||
+			s[i] == '\t' ||
+			s[i] == '\n' ||
+			s[i] == ',' ||
+			s[i] == ';' ||
+			s[i] == '.' ||
+			s[i] == '!' ||
+			s[i] == '?' ||
+			s[i] == '"' ||
+			s[i] == '(' ||
+			s[i] == ')' ||
+			s[i] == '{' ||
+			s[i] == '}')
+			j = 1;
 		else
-			if (s[i + 1] != '\0' && s[i + 1] < 123 && s[i + 1] > 96)
-				s[i + 1] -= 32;
+			j = 0;
 	}
+
 	return (s);
 }
