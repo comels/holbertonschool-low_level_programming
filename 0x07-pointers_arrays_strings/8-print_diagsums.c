@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
+ * print_diagsums - fonction
  * @a: param
  * @size: param
  * Return: rien
