@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int _strspn - fonction
+ * _strspn - fonction
  * @s: param
  * @accept: param
  * Return: s
