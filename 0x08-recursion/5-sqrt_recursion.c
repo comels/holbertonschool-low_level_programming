@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt - fonction
+ * _sqrt - fonction
  * @n: param
  * @x: param
  * Return: int
