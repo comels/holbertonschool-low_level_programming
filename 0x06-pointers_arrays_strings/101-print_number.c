@@ -7,23 +7,28 @@
  */
 void print_number(int n)
 {
-	unsigned int div = 1;
+        unsigned int div = 1;
+	unsigned int m;
 
 	if (n < 0)
 	{
 		_putchar(45);
-		n = n * -1;
+		m = n * -1;
 	}
+	else
+		m = n;
 
-	while (n / (div * 10) != 0)
+	printf("m = %d\n", m);
+	while (m / (div * 10) != 0)
 	{
 		div = div * 10;
 	}
 
+	printf("div = %d\n", div);
 	while (div > 0)
 	{
-		_putchar((n / div) + 48);
-		n = n % div;
+		_putchar((m / div) + 48);
+		m = m % div;
 		div = div / 10;
 	}
 }
