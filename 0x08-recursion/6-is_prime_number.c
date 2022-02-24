@@ -7,7 +7,7 @@
  */
 int prime(int n, int x)
 {
-	if (x == n)
+	if (x > n / 2)
 		return (1);
 	if (n % x == 0)
 		return (0);
