@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strchr - fonction
  * @s: param
@@ -12,5 +13,5 @@ char *_strchr(char *s, char c)
 	for (i = 0; s[i] != '\0'; i++)
 		if (s[i] == c)
 			return (s + i);
-	return (0);
+	return (NULL);
 }
