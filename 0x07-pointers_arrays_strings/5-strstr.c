@@ -3,7 +3,7 @@
  * _strstr - fonction
  * @needle: param
  * @haystack: param
- * Return: 0
+ * Return: rien
  */
 char *_strstr(char *haystack, char *needle)
 {
