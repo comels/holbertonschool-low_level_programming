@@ -1,13 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - fonction
- * @argv: param
  * @argc: param
+ * @argv: param
  * Return: 0
  */
-int main(int argc, int *argv[])
+int main(int argc, char *argv[])
 {
-	int i = 0;
+	int i = 1;
+	int sum = 0;
+	int j = 0;
 
-	for(; i < argc; i++)
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[i]);
+	}
+	printf("%d\n", sum);
+	return (0);
+}
