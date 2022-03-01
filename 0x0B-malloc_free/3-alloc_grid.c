@@ -13,7 +13,7 @@ int **alloc_grid(int width, int height)
 	int j = 0;
 	int **tab;
 
-	tab = malloc(sizeof(int *) * height);
+	tab = malloc(sizeof(int) * height);
 
 	for (i = 0; i < height; i++)
 	{
