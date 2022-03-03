@@ -28,9 +28,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[j] != '\0')
 		j++;
 
-	if (n >= j)
-		n = j;
-
 	size = i + n + 1;
 
 	s3 = malloc(sizeof(char) * size);
