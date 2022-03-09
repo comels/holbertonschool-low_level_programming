@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_name - fonction
+ * array_iterator - fonction
  * @array: param
  * @size: param
  * @action: parm
