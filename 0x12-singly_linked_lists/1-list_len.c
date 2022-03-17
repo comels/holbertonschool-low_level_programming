@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
- * print_len - fonction
+ * list_len - fonction
  * @h: param
+ * Return: i
  */
 size_t list_len(const list_t *h)
 {
