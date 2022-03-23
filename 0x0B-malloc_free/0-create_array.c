@@ -5,7 +5,7 @@
  * *create_array - fonction
  * @size: param
  * @c: param
- * Return: 0
+ * Return: str
  */
 char *create_array(unsigned int size, char c)
 {
