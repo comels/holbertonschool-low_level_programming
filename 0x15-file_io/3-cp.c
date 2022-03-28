@@ -16,21 +16,23 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
 	openfrom = open(argv[1], O_RDONLY);
-
 	if (openfrom == -1)
-		dprintf(STDERR_FILENO, "Error: Can't read fromfile %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from
+		file %s\n", argv[1]), exit(98);
 
 	opento = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (opento == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
-	
+
 	while ((r = read(openfrom, str, 1024)) > 0)
 	{
 		w = write(opento, str, r);
-		if (w == -1)
+		if (w != r || w == -1)
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
-	
+	if (r == -1)
+		dprintf(STDERR_FILENO, "Error: Can't read from
+		file %s\n", argv[1]), exit(98);
 
 	close(openfrom);
 	if (close(openfrom) == -1)
