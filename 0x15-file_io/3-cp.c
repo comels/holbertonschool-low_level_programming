@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv)
 {
-	int openfrom, opento, r, w;
+	int openfrom, opento, r, w, closeto, closefrom;
 	char str[1024];
 
 	if (argc != 3)
@@ -32,12 +32,12 @@ int main(int argc, char **argv)
 	if (r == -1)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
-	close(openfrom);
-	if (close(openfrom) == -1)
+	closefrom = close(openfrom);
+	if (closefrom == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", openfrom), exit(100);
 
-	close(opento);
-	if (close(opento) == -1)
+	closeto = close(opento);
+	if (closeto == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", opento), exit(100);
 
 	return (0);
