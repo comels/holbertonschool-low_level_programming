@@ -26,17 +26,17 @@ int main(int argc, char **argv)
 	if (opento == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	r = read(openfrom, str, 1024);
+	while ((r = read(openfrom, str, 1024)) > 0)
+	{
+		w = write(opento, str, r);
+		if (w == -1)
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+	}
 	if (r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
-	w = write(opento, str, r);
-	if (w == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
-	
 
 	closefrom = close(openfrom);
 	if (closefrom == -1)
