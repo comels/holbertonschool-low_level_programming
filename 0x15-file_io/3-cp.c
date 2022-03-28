@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	if (opento == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	while ((r = read(openfrom, str, 1024)) != 0)
+	while ((r = read(openfrom, str, 1024)) > 0)
 	{
 		w = write(opento, str, r);
 		if (w == -1)
