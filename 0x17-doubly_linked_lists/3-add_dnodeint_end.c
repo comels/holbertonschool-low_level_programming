@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
  * add_dnodeint_end - fonction that add at end a node
- * @h: List to add
+ * @head: List to add
+ * @n: int of the new node
  * Return: List
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
@@ -21,7 +22,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = new;
 		return (new);
 	}
-	while(temp->next)
+	while (temp->next)
 		temp = temp->next;
 
 	temp->next = new;
