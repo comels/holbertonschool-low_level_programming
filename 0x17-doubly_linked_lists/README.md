@@ -460,22 +460,21 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./j
 402
 1024
 julien@ubuntu:~/0x17. Doubly linked lists$
-
+```
 Repo:
 
     GitHub repository: holbertonschool-low_level_programming
     Directory: 0x17-doubly_linked_lists
     File: 7-insert_dnodeint.c, 2-add_dnodeint.c, 3-add_dnodeint_end.c
-```
+
 8. Delete at index
 
-```
 Write a function that deletes the node at index index of a dlistint_t linked list.
 
     Prototype: int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
     where index is the index of the node that should be deleted. Index starts at 0
     Returns: 1 if it succeeded, -1 if it failed
-
+```
 julien@ubuntu:~/0x17. Doubly linked lists$ cat 8-main.c
 #include <stdlib.h>
 #include <string.h>
@@ -601,10 +600,9 @@ julien@ubuntu:~/0x17. Doubly linked lists$ ./k
 -----------------
 -----------------
 julien@ubuntu:~/0x17. Doubly linked lists$ 
-
+```
 Repo:
 
     GitHub repository: holbertonschool-low_level_programming
     Directory: 0x17-doubly_linked_lists
     File: 8-delete_dnodeint.c
-```
