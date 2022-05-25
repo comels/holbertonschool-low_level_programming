@@ -1,6 +1,6 @@
-0x1A. C - Hash tables
+# 0x1A. C - Hash tables
 
-Learning Objectives
+### Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
@@ -12,7 +12,7 @@ General
     What are the advantages and drawbacks of using hash tables
     What are the most common use cases of hash tables
 
-More Info
+### More Info
 Data Structures
 
 Please use these data structures for this project:
