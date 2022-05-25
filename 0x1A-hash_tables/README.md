@@ -47,8 +47,8 @@ typedef struct hash_table_s
 } hash_table_t;
 
 
-Tasks
-###0. >>> ht = {}
+## Tasks
+### 0. >>> ht = {}
 mandatory
 
 Write a function that creates a hash table.
@@ -110,7 +110,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 0-hash_table_create.c
 
-###1. djb2
+### 1. djb2
 mandatory
 
 Write a hash function implementing the djb2 algorithm.
@@ -168,7 +168,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 1-djb2.c
 
-###2. key -> index
+### 2. key -> index
 mandatory
 
 Write a function that gives you the index of a key.
@@ -224,7 +224,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 2-key_index.c
 
-###3. >>> ht['betty'] = 'cool'
+### 3. >>> ht['betty'] = 'cool'
 mandatory
 
 Write a function that adds an element to the hash table.
@@ -274,7 +274,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 3-hash_table_set.c
 
-###4. >>> ht['betty']
+### 4. >>> ht['betty']
 mandatory
 
 Write a function that retrieves a value associated with a key.
@@ -346,7 +346,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 4-hash_table_get.c
 
-###5. >>> print(ht)
+### 5. >>> print(ht)
 mandatory
 
 Write a function that prints a hash table.
@@ -397,7 +397,7 @@ Repo:
     Directory: 0x1A-hash_tables
     File: 5-hash_table_print.c
 
-###6. >>> del ht
+### 6. >>> del ht
 mandatory
 
 Write a function that deletes a hash table.
