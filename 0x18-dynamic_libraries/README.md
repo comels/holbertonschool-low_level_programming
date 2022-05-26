@@ -1,6 +1,6 @@
 # 0x18. C - Dynamic libraries
 
-Learning Objectives
+### Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 General
@@ -10,9 +10,8 @@ General
     What are the differences between static and shared libraries
     Basic usage nm, ldd, ldconfig
 
-Tasks
-0. A library is not a luxury but one of the necessities of life
-mandatory
+## Tasks
+### 0. A library is not a luxury but one of the necessities of life
 
 Create the dynamic library libdynamic.so containing all the functions listed below:
 ```
@@ -110,8 +109,7 @@ Repo:
     Directory: 0x18-dynamic_libraries
     File: libdynamic.so, main.h
 ```
-1. Without libraries what have we? We have no past and no future
-mandatory
+### 1. Without libraries what have we? We have no past and no future
 
 Create a script that creates a dynamic library called liball.so from all the .c files that are in the current directory.
 ```
@@ -152,8 +150,8 @@ Repo:
     Directory: 0x18-dynamic_libraries
     File: 1-create_dynamic_lib.sh
 ```
-2. Either write something worth reading or do something worth writing
-mandatory
+### 2. Either write something worth reading or do something worth writing
+
 ```
 Write a blog post describing the differences between static and dynamic libraries. It should cover:
 
